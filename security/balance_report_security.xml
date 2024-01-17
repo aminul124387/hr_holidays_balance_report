@@ -7,5 +7,10 @@
             <field name="model_id" ref="model_report_balance_leave"/>
             <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
         </record>
+        <record id="hr_balance_report_rule_manager" model="res.groups">
+            <field name="name">Leave Balance Report</field>
+        </record>
+
+
     </data>
 </odoo>

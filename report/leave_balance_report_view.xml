@@ -54,4 +54,10 @@
               parent="hr_holidays.menu_hr_holidays_report"
               sequence="3"/>
 
+    <menuitem id="menu_action_leave_balance_report"
+              name="Leave Balance Report Manager"
+              action="action_leave_balance_reports"
+              parent="hr_holidays.menu_hr_holidays_approvals"
+              sequence="3" groups="hr_holidays_balance_report.hr_balance_report_rule_manager"/>
+
 </odoo>

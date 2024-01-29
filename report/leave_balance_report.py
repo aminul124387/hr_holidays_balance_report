@@ -33,6 +33,7 @@ class LeaveBalanceReport(models.Model):
     emp_id = fields.Many2one('hr.employee', string="Employee", readonly=True)
     gender = fields.Char(string='gender', readonly=True)
     department_id = fields.Many2one('hr.department', string='Department', readonly=True)
+    team_name = fields.Many2one(string='Team Name', readonly=True, related="emp_id.team_name")
     country_id = fields.Many2one('res.country', string='Nationality', readonly=True)
     job_id = fields.Many2one('hr.job', string='Job', readonly=True)
     leave_type_id = fields.Many2one('hr.leave.type', string='Leave Type', readonly=True)
